@@ -39,7 +39,7 @@ test('Stack should be empty after pushing and then popping an element', async ()
     await peek.click();
 
     let stack = await driver.findElement(By.id('top_of_stack')).getText();
-    expect(stack).toEqual('WOW');
+    expect(stack).toEqual('undefined');
 })
 
 describe('Clicking "Pusha till stacken"', () => {
